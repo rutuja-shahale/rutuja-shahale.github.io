@@ -10,6 +10,10 @@ body {
     background-attachment: fixed; /* Keep the background fixed on scroll */
     background-position: center; /* Center the background image */
 }
+.lazyload {
+    max-width: 100%;
+    height: auto;
+}
 
 .profile-card {
     background-color: #000000b3;
