@@ -1,0 +1,223 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;  
+    background-image: url('images/bg.jpg'); /* Add your image URL here */
+    background-size: cover; /* Cover the entire body */
+    background-attachment: fixed; /* Keep the background fixed on scroll */
+    background-position: center; /* Center the background image */
+}
+
+.profile-card {
+    background-color: #000000b3;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%; /* Adjusted to fit the viewport better */
+    max-width: 600px; /* Sets a maximum width to avoid becoming too large on larger screens */
+    text-align: center;
+    color: white;
+    box-shadow: 0 40px 40px rgba(125, 125, 204, 0.3); /* Added box-shadow for a subtle lift effect */
+    margin: 20px auto; /* Centers the card horizontally */
+    box-sizing: border-box; /* Ensures padding and border are included in the element’s total width and height */
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    background-color: #4c4c4c00;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    margin: 5px 0;
+    font-size: 24px;
+}
+
+h3 {
+    margin: 2px 0;
+    font-size: 15px;
+    color: #7d7dcce6;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 20px 0 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.message-btn {
+    background-color: #ffffff00;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 33px;
+    color: #ffffff;
+    margin: 30px auto; /* Centers the button horizontally and adds margin */
+    display: block; /* Ensures the button takes up the available width for centering */
+    text-align: center; /* Centers text inside the button */
+    border: 2px solid #7d7dcc;
+    /* transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; Smooth transition for background, text color, and border */
+}
+
+.message-btn a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures the link inherits the button's text color */
+    display: inline-block; /* Ensures the link fits the button and is centered */
+    width: 100%; /* Ensures the link fills the button */
+    /* transition: color 0.3s ease; Smooth transition for text color */
+}
+
+.message-btn:hover {
+    border: 2px solid #7d7dcc; /* Add blue border on hover */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center items vertically if needed */
+    gap: 30px; /* Space between icons, adjust as needed */
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    background-color: #ffffff; /* White background */
+    border-radius: 50%; /* Circular shape */
+    color: #212142; /* Icon color */
+    font-size: 24px; /* Adjust icon size */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-links a:hover {
+    background-color: #f0f0f0; /* Slightly off-white on hover */
+    color: #7d7dff; /* Change icon color on hover */
+}
+
+.about-section {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f4f4f900;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.about-section h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* New CSS for Projects Section */
+.projects-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.projects-section div {
+    margin-bottom: 15px;
+}
+
+.projects-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.projects-section .message-btn {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+    
+    .message-btn {
+        padding: 8px 20px; /* Adjust padding for smaller buttons */
+    }
+    
+    .social-links a {
+        font-size: 20px; /* Adjust font size for social icons */
+    }
+}
+
+/* Container for the image */
+.image.main {
+    display: flex; /* Use flexbox to center the image if needed */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically if the container has a set height */
+    margin: 20px 0; /* Add some spacing around the image */
+    padding: 10px; /* Add some padding around the image */
+    border-radius: 8px; /* Optional: Round the corners of the border */
+    overflow: hidden; /* Ensures that any overflow from the image is hidden */
+}
+
+/* Style for the image itself */
+.image.main img {
+    max-width: 80%; /* Ensures the image scales responsively */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 6px; /* Optional: Round the corners of the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect to the image */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image.main {
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+}
+
+.technical-skills {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap to the next line if necessary */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    margin: 20px 0; /* Add some margin to separate from other content */
+}
+
+.skill-btn {
+    background-color: #ffffff00; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 25px; /* Button padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Adjust font size */
+    border: 2px solid #7d7dcc;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+.divider {
+    border: 0; /* Remove default border */
+    border-top: 1px dotted #6d6d6f; /* Solid line with color */
+    margin: 20px 0; /* Add some margin to separate from other elements */
+    width: 100%; /* Set the width of the line */
+    align-self: center; /* Center the line horizontally */
+}
+
