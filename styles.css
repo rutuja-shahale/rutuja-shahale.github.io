@@ -16,7 +16,7 @@ body {
     max-width: 600px; /* Sets a maximum width to avoid becoming too large on larger screens */
     text-align: center;
     color: white;
-    box-shadow: 0 800px 800px rgba(0,0,0, 0.3); /* Added box-shadow for a subtle lift effect */
+    box-shadow: 0 16px 32px rgba(1,1,1, 0.8); 
     margin: 20px auto; /* Centers the card horizontally */
     box-sizing: border-box; /* Ensures padding and border are included in the element’s total width and height */
 }
@@ -39,7 +39,7 @@ h1 {
 h3 {
     margin: 2px 0;
     font-size: 15px;
-    color: #7d7dcccc;
+    color: #7d7dcc;
 }
 
 h2 {
