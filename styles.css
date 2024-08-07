@@ -21,14 +21,25 @@ body {
     box-sizing: border-box; /* Ensures padding and border are included in the element’s total width and height */
 }
 
+.profile-image-container {
+    display: inline-block;
+    padding: 5px; /* Space between the image and the ring */
+    border: 2px solid #7d7dcc; /* Ring color and width */
+    border-radius: 50%; /* Makes the container circular */
+    margin: 0 auto; /* Centers the container horizontally */
+    width: 150px; /* 200px image + 10px padding on each side */
+    height: 150px;
+}
+
 .profile-image {
-    width: 100px;
-    height: 100px;
-    background-color: #4c4c4c00;
+    width: 150px;
+    height: 150px;
+    background-color: #4c4c4c;
     border-radius: 50%;
     margin: 0 auto 20px;
     background-size: cover;
     background-position: center;
+    background-image: url('images/profile.jpg');
 }
 
 h1 {
