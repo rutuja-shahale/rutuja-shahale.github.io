@@ -13,7 +13,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     width: 90%; /* Adjusted to fit the viewport better */
-    max-width: 600px; /* Sets a maximum width to avoid becoming too large on larger screens */
+    max-width: 700px; /* Sets a maximum width to avoid becoming too large on larger screens */
     text-align: center;
     color: white;
     box-shadow: 0 8px 16px rgba(1,1,1, 0.8); 
