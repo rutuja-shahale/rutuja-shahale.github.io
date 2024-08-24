@@ -1,25 +1,25 @@
-/* body {
+ body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;  
-    background-color: #7d7dcce6;
-} */
-body {
+    background-color: #7d7dcc;
+} 
+/*body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('images/bg.jpg'); /* Add your image URL here */
-    background-size: cover; /* Cover the entire body */
-    background-attachment: fixed; /* Keep the background fixed on scroll */
-    background-position: center; /* Center the background image */
+    background-image: url('images/bg.jpg'); /* Add your image URL here 
+    background-size: cover; /* Cover the entire body 
+    background-attachment: fixed; /* Keep the background fixed on scroll 
+    background-position: center; /* Center the background image 
     background-repeat: no-repeat; 
-}
+}*/
 
 .profile-card {
     background-color: #000000b3;
