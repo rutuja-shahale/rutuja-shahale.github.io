@@ -338,15 +338,16 @@ header {
 nav {
     display: flex;
     flex-direction: row;
-    font-size: 24px;
+    font-size: 25px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 50px; /* Space between items */
+    gap: 25px; /* Space between items */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
+    background-color: #191f36;
 }
 
 nav ul li {
@@ -374,7 +375,7 @@ nav ul li a:hover {
     nav {
         display: none;
         flex-direction: column;
-        background-color: #000;
+        background-color: #191f36;
         position: absolute;
         top: 60px; /* Adjust to be below the header */
         right: 0;
