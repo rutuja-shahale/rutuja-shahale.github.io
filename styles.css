@@ -15,7 +15,6 @@
     min-height: 100vh;
     /* margin: 0; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* font-family: s; */
     background-color: #191f36;
     /* background-image: url('images/bg.jpg'); 
     background-size: cover; 
@@ -28,14 +27,19 @@
     background-color: #191f36;
     border-radius: 10px;
     padding: 20px;
-    padding-top: 70px;
+    padding-top: 90px;
     width: 90%; 
-    max-width: 1000px; 
+    max-width: 1100px; 
     text-align: center;
     color: white;
     /* box-shadow: 0 16px 32px rgb(0, 0, 0);  */
     margin: 20px auto; 
     box-sizing: border-box; 
+}
+
+.profile-card p {
+    font-size: 20px;
+    padding-top: 0px;
 }
 
 .profile-image-container {
@@ -44,13 +48,13 @@
     border: 2px solid #7d7dcc; /* Ring color and width */
     border-radius: 50%; /* Makes the container circular */
     margin: 0 auto; /* Centers the container horizontally */
-    width: 200px; /* 200px image + 10px padding on each side */
-    height: 200px;
+    width: 220px; /* 200px image + 10px padding on each side */
+    height: 220px;
 }
 
 .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     background-color: #4c4c4c;
     border-radius: 50%;
     margin: 0 auto 20px;
@@ -67,7 +71,7 @@
   
   .project-item {
     background-color: #191f36;
-    padding: 15px;
+    padding: 0px;
     border-radius: 8px;
     text-align: center;
     border: 2px solid #7d7dcc;
@@ -86,9 +90,10 @@
   }
   
 h1 {
-    margin: 5px 0;
-    font-size: 35px;
-    padding-top: 10px;
+    margin: 0px 0;
+    font-size: 33px;
+    padding-bottom: 10px;
+    font-weight: 500;
 }
 
 h3 {
@@ -96,11 +101,14 @@ h3 {
     font-size: 30px;
     color: #d26eb0;
     margin-top: 20px 60px;
+    font-weight: 500;
 }
 
 h2 {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 2px 2px;
 }
 
 p {
@@ -108,7 +116,7 @@ p {
     line-height: 1.5;
     margin: 20px 0 20px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 .message-btn {
@@ -125,7 +133,7 @@ p {
 }
 
 .message-btn a {
-    font-size: 22px;
+    font-size: 18px;
     text-decoration: none; /* Removes the underline */
     color: inherit; /* Ensures the link inherits the button's text color */
     display: inline-block; /* Ensures the link fits the button and is centered */
@@ -142,7 +150,8 @@ p {
     justify-content: center; /* Center the items horizontally */
     align-items: center; /* Center items vertically if needed */
     gap: 30px; /* Space between icons, adjust as needed */
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    margin-top: 25px;
 }
 
 .social-links a {
@@ -181,7 +190,7 @@ p {
 }
 
 .about-section p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.6;
     margin: 0;
     text-align: center;
@@ -230,12 +239,12 @@ p {
 .certificate-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 items side by side */
-    gap: 20px; /* spacing between the items */
+    gap: 10px; /* spacing between the items */
   }
   
   .certificate-item {
     background-color: #191f36;
-    padding: 30px;
+    padding: 10px;
     border-radius: 8px;
     text-align: center;
   }
@@ -267,7 +276,7 @@ p {
     border-radius: 20px; /* Rounded corners */
     padding: 10px 25px; /* Button padding */
     cursor: pointer; /* Pointer cursor on hover */
-    font-size: 18px; /* Adjust font size */
+    font-size: 16px; /* Adjust font size */
     border: 2px solid #7d7dcc;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
 }
@@ -293,7 +302,7 @@ header {
     left: 0;
     background-color: #191f36;
     z-index: 100;
-    padding: 20px 20px; /* Adjust padding to fit your design */
+    padding: 20px 30px 20px 30px; /* Adjust padding to fit your design */
     box-sizing: border-box; /* Ensure padding is included in the width calculation */
 }
 
@@ -335,7 +344,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px; /* Space between items */
+    gap: 50px; /* Space between items */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
 }
