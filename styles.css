@@ -65,7 +65,7 @@
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 items side by side */
+    grid-template-columns: repeat(3, 1fr); /* 2 items side by side */
     gap: 20px; /* spacing between the items */
   }
   
