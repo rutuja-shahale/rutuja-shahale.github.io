@@ -45,7 +45,7 @@
 .profile-image-container {
     display: inline-block;
     padding: 5px; /* Space between the image and the ring */
-    border: 2px solid #A084DC; /* Ring color and width */
+    border: 2px solid #957dad; /* Ring color and width */
     border-radius: 50%; /* Makes the container circular */
     margin: 0 auto; /* Centers the container horizontally */
     width: 220px; /* 200px image + 10px padding on each side */
@@ -70,11 +70,11 @@
   }
   
   .project-item {
-    background-color: #2A205B;
+    background-color: #684dff33;
     padding: 0px;
     border-radius: 8px;
     text-align: center;
-    border: 2px solid #2A205B;
+    border: 2px solid #684dff33;
   }
   
   .project-item:hover {
@@ -103,7 +103,7 @@ h1 {
 h3 {
     margin: 0px 20px;
     font-size: 30px;
-    color: #A084DC;
+    color: #957dad;
     margin-bottom: 60px 60px;
     font-weight: 500;
 }
@@ -124,7 +124,7 @@ p {
 }
 
 .message-btn {
-    background-color: #A084DC;
+    background-color: #957dad;
     border: none;
     border-radius: 20px;
     padding: 10px 33px;
@@ -132,7 +132,7 @@ p {
     margin: 30px auto; /* Centers the button horizontally and adds margin */
     display: block; /* Ensures the button takes up the available width for centering */
     text-align: center; /* Centers text inside the button */
-    border: 2px solid #A084DC;
+    border: 2px solid #957dad;
     /* transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; Smooth transition for background, text color, and border */
 }
 
@@ -146,7 +146,7 @@ p {
 }
 
 .message-btn:hover {
-    border: 2px solid #2A205B; /* Add blue border on hover */
+    border: 2px solid #684dff33; /* Add blue border on hover */
 }
 
 .social-links {
@@ -174,7 +174,7 @@ p {
 
 .social-links a:hover {
     background-color: #f0f0f0; /* Slightly off-white on hover */
-    color: #A084DC; 
+    color: #957dad; 
 }
 
 .about-section {
@@ -280,20 +280,20 @@ p {
 }
 
 .skill-btn {
-    background-color: #2A205B; /* Button background color */
+    background-color: #684dff33; /* Button background color */
     color: #ffffff99; /* Button text color */
     border: none; /* Remove default border */
     border-radius: 20px; /* Rounded corners */
     padding: 10px 25px; /* Button padding */
     cursor: pointer; /* Pointer cursor on hover */
     font-size: 16px; /* Adjust font size */
-    border: 2px solid #2A205B;
+    border: 2px solid #684dff33;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Include transform in transition */
 }
 
 .skill-btn:hover {
     background-color: #191A32; /* Change background on hover */
-    color: #A084DC; /* Change text color on hover */
+    color: #957dad; /* Change text color on hover */
     transform: translateY(-5px); /* Move the button upward on hover */
 }
 
@@ -378,7 +378,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    border-bottom: 2px solid #A084DC;
+    border-bottom: 2px solid #957dad;
 }
 
 /* Responsive Styles */
@@ -421,7 +421,7 @@ nav ul li a:hover {
     }
 
     nav ul li a:hover {
-        border-bottom: 2px solid #A084DC;
+        border-bottom: 2px solid #957dad;
     }
 }
 
