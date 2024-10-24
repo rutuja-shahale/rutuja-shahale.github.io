@@ -15,7 +15,7 @@
     min-height: 100vh;
     /* margin: 0; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #191f36;
+    background-color: #191A32;
     /* background-image: url('images/bg.jpg'); 
     background-size: cover; 
     background-attachment: fixed; 
@@ -24,7 +24,7 @@
 }
 
 .profile-card {
-    background-color: #191f36;
+    background-color: #191A32;
     border-radius: 10px;
     padding: 20px;
     padding-top: 90px;
@@ -45,7 +45,7 @@
 .profile-image-container {
     display: inline-block;
     padding: 5px; /* Space between the image and the ring */
-    border: 2px solid #7d7dcc; /* Ring color and width */
+    border: 2px solid #A084DC; /* Ring color and width */
     border-radius: 50%; /* Makes the container circular */
     margin: 0 auto; /* Centers the container horizontally */
     width: 220px; /* 200px image + 10px padding on each side */
@@ -70,13 +70,17 @@
   }
   
   .project-item {
-    background-color: #191f36;
+    background-color: #2A205B;
     padding: 0px;
     border-radius: 8px;
     text-align: center;
-    border: 2px solid #7d7dcc;
+    border: 2px solid #2A205B;
   }
   
+  .project-item:hover {
+    background-color: #191A32;
+  }
+
   .project-item img {
     width: 100%;
     height: auto;
@@ -99,8 +103,8 @@ h1 {
 h3 {
     margin: 0px 20px;
     font-size: 30px;
-    color: #d26eb0;
-    margin-top: 20px 60px;
+    color: #A084DC;
+    margin-bottom: 60px 60px;
     font-weight: 500;
 }
 
@@ -120,15 +124,15 @@ p {
 }
 
 .message-btn {
-    background-color: #ffffff00;
+    background-color: #A084DC;
     border: none;
     border-radius: 20px;
     padding: 10px 33px;
-    color: #ffffff;
+    color: #191A32;
     margin: 30px auto; /* Centers the button horizontally and adds margin */
     display: block; /* Ensures the button takes up the available width for centering */
     text-align: center; /* Centers text inside the button */
-    border: 2px solid #7d7dcc;
+    border: 2px solid #A084DC;
     /* transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; Smooth transition for background, text color, and border */
 }
 
@@ -142,7 +146,7 @@ p {
 }
 
 .message-btn:hover {
-    border: 2px solid #7d7dcc; /* Add blue border on hover */
+    border: 2px solid #2A205B; /* Add blue border on hover */
 }
 
 .social-links {
@@ -162,7 +166,7 @@ p {
     height: 40px; /* Adjust size as needed */
     background-color: #ffffff; /* White background */
     border-radius: 50%; /* Circular shape */
-    color: #191f36; /* Icon color */
+    color: #191a32; /* Icon color */
     font-size: 24px; /* Adjust icon size */
     transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none; /* Remove underline from links */
@@ -170,7 +174,7 @@ p {
 
 .social-links a:hover {
     background-color: #f0f0f0; /* Slightly off-white on hover */
-    color: #7d7dff; 
+    color: #A084DC; 
 }
 
 .about-section {
@@ -179,13 +183,14 @@ p {
     background-color: #f4f4f900;
     border-radius: 5px;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 0px;
+    color: #ffffff99;
 }
 
 .about-section h3 {
     font-size: 30px;
-    margin-bottom: 15px;
-    margin-top: 10px;
+    margin-bottom: 60px;
+    margin-top: 60px;
     text-align: center;
 }
 
@@ -203,7 +208,7 @@ p {
     border-radius: 5px;
     text-align: left;
     /* border: 2px solid #7d7dcc; */
-
+    
 }
 
 .projects-section div {
@@ -238,12 +243,12 @@ p {
 /* Certificate Section */
 .certificate-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 items side by side */
+    grid-template-columns: repeat(4, 1fr); /* 2 items side by side */
     gap: 10px; /* spacing between the items */
   }
   
   .certificate-item {
-    background-color: #191f36;
+    background-color: #191a32;
     padding: 10px;
     border-radius: 8px;
     text-align: center;
@@ -253,7 +258,12 @@ p {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    transition: 0.3s;
   }
+
+  .certificate-item img:hover {
+    transform: scale(1.7);
+}
   
   @media (max-width: 768px) {
     .certificate-grid {
@@ -261,7 +271,7 @@ p {
     }
   }
 
-.technical-skills {
+  .technical-skills {
     display: flex;
     flex-wrap: wrap; /* Allows buttons to wrap to the next line if necessary */
     justify-content: center; /* Center the buttons horizontally */
@@ -270,15 +280,21 @@ p {
 }
 
 .skill-btn {
-    background-color: #ffffff00; /* Button background color */
-    color: #ffffff; /* Button text color */
+    background-color: #2A205B; /* Button background color */
+    color: #ffffff99; /* Button text color */
     border: none; /* Remove default border */
     border-radius: 20px; /* Rounded corners */
     padding: 10px 25px; /* Button padding */
     cursor: pointer; /* Pointer cursor on hover */
     font-size: 16px; /* Adjust font size */
-    border: 2px solid #7d7dcc;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+    border: 2px solid #2A205B;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Include transform in transition */
+}
+
+.skill-btn:hover {
+    background-color: #191A32; /* Change background on hover */
+    color: #A084DC; /* Change text color on hover */
+    transform: translateY(-5px); /* Move the button upward on hover */
 }
 
 .divider {
@@ -300,7 +316,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #191f36;
+    background-color: #191a32;
     z-index: 100;
     padding: 20px 30px 20px 30px; /* Adjust padding to fit your design */
     box-sizing: border-box; /* Ensure padding is included in the width calculation */
@@ -317,7 +333,7 @@ header {
 
 .logo {
     font-size: 30px; /* Adjust logo size */
-    color: #fff;
+    color: #ffffff99;
 }
 
 .hamburger {
@@ -329,7 +345,7 @@ header {
 .hamburger span {
     height: 3px;
     width: 25px;
-    background-color: white;
+    background-color: #ffffff99;
     margin: 4px 0;
     transition: all 0.3s;
 }
@@ -347,7 +363,7 @@ nav ul {
     gap: 25px; /* Space between items */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    background-color: #191f36;
+    background-color: #191a32;
 }
 
 nav ul li {
@@ -355,14 +371,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff99;
     text-decoration: none;
     text-transform: titlecase;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #A084DC;
 }
 
 /* Responsive Styles */
@@ -375,7 +391,7 @@ nav ul li a:hover {
     nav {
         display: none;
         flex-direction: column;
-        background-color: #191f36;
+        background-color: #191a32;
         position: absolute;
         top: 60px; /* Adjust to be below the header */
         right: 0;
@@ -400,12 +416,12 @@ nav ul li a:hover {
     }
 
     nav ul li a {
-        color: white;
+        color: #ffffff99;
         text-decoration: none;
     }
 
     nav ul li a:hover {
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid #A084DC;
     }
 }
 
@@ -419,3 +435,4 @@ nav ul li a:hover {
     /* margin-top: -60px; Adjust for header height */
     visibility: hidden;
 }
+
