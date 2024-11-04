@@ -74,11 +74,11 @@
     padding: 0px;
     border-radius: 8px;
     text-align: center;
-    border: 2px solid #684dff33;
   }
   
   .project-item:hover {
     background-color: #191A32;
+    border: 2px solid #684dff33;
   }
 
   .project-item img {
@@ -290,11 +290,11 @@ p {
     padding: 10px 25px; /* Button padding */
     cursor: pointer; /* Pointer cursor on hover */
     font-size: 16px; /* Adjust font size */
-    border: 2px solid #684dff33;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Include transform in transition */
 }
 
 .skill-btn:hover {
+    border: 2px solid #684dff33;
     background-color: #191A32; /* Change background on hover */
     color: #957dad; /* Change text color on hover */
     transform: translateY(-5px); /* Move the button upward on hover */
