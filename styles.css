@@ -30,7 +30,7 @@ body {
     max-width: 900px; 
     text-align: center;
     color: white;
-    /* box-shadow: 0 16px 32px rgb(0, 0, 0);  */
+    /* box-shadow: 0 16px 32px #121212cc;  */
     margin: 20px auto; 
     box-sizing: border-box; 
 }
@@ -160,30 +160,45 @@ p {
 }
 
 .message-btn {
-    background-color: #957dad;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 33px;
-    color: #191A32;
-    margin: 30px auto; /* Centers the button horizontally and adds margin */
-    display: block; /* Ensures the button takes up the available width for centering */
+    position: relative; /* For pseudo-element positioning */
+    background-color: #121212cc; /* Button background color */
+    color: #ffffff; /* Text color */
+    border: none; /* No regular border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 33px; /* Keep padding as is */
+    margin: 30px auto; /* Centers button horizontally and adds spacing */
+    display: block; /* Centers button */
     text-align: center; /* Centers text inside the button */
-    border: 2px solid #957dad;
-    /* transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; Smooth transition for background, text color, and border */
+    z-index: 1; /* Ensures button is above pseudo-element */
+    overflow: hidden; /* Ensures gradient border does not spill outside */
+}
+
+.message-btn::before {
+    content: ""; /* Empty pseudo-element for border effect */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px; /* Match button's border radius */
+    padding: 2px; /* Thickness of the gradient border */
+    background: linear-gradient(90deg,#91617ecc, #3b3b78cc); /* Gradient colors */
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0); /* Masks inner area */
+    -webkit-mask-composite: destination-out; 
+    mask-composite: exclude; /* Ensures the inner part is transparent */
+    z-index: -1; /* Push behind the button */
 }
 
 .message-btn a {
-    font-size: 18px;
-    text-decoration: none; /* Removes the underline */
-    color: inherit; /* Ensures the link inherits the button's text color */
-    display: inline-block; /* Ensures the link fits the button and is centered */
-    width: 100%; /* Ensures the link fills the button */
-    /* transition: color 0.3s ease; Smooth transition for text color */
+    font-size: 18px; /* Adjust font size */
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps text color */
+    display: inline-block; /* Ensures proper alignment */
+    width: 100%; /* Allows link to fill button */
 }
 
-.message-btn:hover {
-    border: 2px solid #684dff33; /* Add blue border on hover */
-}
 
 .social-links {
     display: flex;
@@ -317,7 +332,7 @@ p {
     color: #ffffff99; /* Change text color on hover */
     background: linear-gradient(#121212cc, #121212cc) padding-box, /* Button background */
                 linear-gradient(90deg, #3b3b78cc, #91617ecc) border-box; /* Gradient border */
-    }
+}
 
 
 
